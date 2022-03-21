@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
   config.vm.provision "file",
-    source: "~/vagrant/file/git-config",
+    source: "~/vagrant/files/git-config",
 	destination: "~/.gitconfig"
 	
   config.vm.provision "shell", 
